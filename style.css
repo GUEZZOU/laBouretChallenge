@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box; 
+    list-style-type: none;
+
+}
+a{ text-decoration: none; color: #fff;}
+.banniere1{
+    background-color: rgb(218, 208, 187);
+   height: 50px;
+   padding: 20px,0; 
+ 
+ 
+}
+.espacePersso{
+    margin-left: 1100px;
+    padding: 10px; 
+    color: #fff;
+    background-color: rgb(61, 88, 77);
+    height: 50px;
+}
+h1{
+    color: rgb(150, 14, 14);
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+
+.banniere2{
+    background-color: #0e3083; ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 5px;
+
+} 
+.banniere2 ul{ 
+     position: relative;
+    display: flex;
+    /* flex-direction: row; */
+    color: rgb(252, 250, 247);
+    padding: 12px;
+    margin: 2px;
+  
+}

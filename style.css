@@ -1,46 +1,301 @@
-*{
-    margin: 0;
-    padding: 0; 
-    box-sizing: border-box; 
-    list-style-type: none;
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
 }
-a{ text-decoration: none; color: #fff;}
-.banniere1{
-    background-color: rgb(218, 208, 187);
-   height: 50px;
-   padding: 20px,0; 
+a {
+  text-decoration: none;
+  color: #fff;
+}
+#bloc_page {
+  background-color: rgba(255, 250, 250, 0.5);
+  margin: 30px;
+  padding: 20px;
+}
+/* ****************************************************************** *NAVE*/
+.banniere1 {
+    border-radius: 0;
+    background: #e0e0e0; 
+   box-shadow: inset 23px 23px 46px #bebebe, inset -23px -23px 46px #ffffff;
+  height: 50px;
+  text-align: center;
+}
+.banniere2 {
+  background-color: #0e3083;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* margin-top: 5px; */
+  height: 70px;
+}
+
+.banniere2 ul {
+  position: relative;
+  display: flex;
+  padding: 0 20px;
+  margin-right: 100px;
+}
+.menu {
+  display: flex;
+  flex: row;
+  justify-content: left;
+  margin-top: 5px;
+}
+.menu li {
+  padding: 20px;
+}
+nav ul li a:hover {
+  /* background-color:#FFFF;  */
+  border-bottom: 3px solid red;
+}
+
+.espacePersso {
+  margin-left: 1100px;
+  padding: 10px;
+  color: rgb(252, 233, 233);
+  background-color: rgb(61, 88, 77);
+  height: 50px;
+}
+/* *************************************************************mode-switch */
+.mode-switch {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  color: var(--main-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ***********************H1(CHALLENGE HONORAIRE)******************************* *SECTION*/
+.titre {
+  color: rgb(150, 14, 14);
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 20px;
+  border-radius: 24px;
+   background: #e0e0e0; 
+  box-shadow: inset 23px 23px 46px #bebebe, inset -23px -23px 46px #ffffff;
+}
+/* ****************************POUR PROGRESS BAR******************************ASIDE */
+.classement {
+  margin: 10px;
+  padding: 10px;
+  flex: 1.5;
+  height: 100%;
+}
+li {
+  width: 50%;
+  float: left;
+  list-style-type: none;
+  padding-right: 5.3333333%;
+}
+
+li:nth-child(even) {
+  margin-bottom: 5em;
+}
+
+.titre_bar {
+  margin: 0 0 1.5em;
+  border-bottom: 1px solid rgb(212, 21, 21);
+  padding: 0 0 0.25em;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+progress[value] {
+  appearance: none;
+  border: none;
+  width: 100%;
+  height: 20px;
+  background-color: whiteSmoke;
+  border-radius: 3px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5) inset;
+  color: royalblue;
+  position: relative;
+  margin: 0 0 1.5em;
+}
+progress[value]::-webkit-progress-bar {
+  background-color: whiteSmoke;
+  border-radius: 3px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5) inset;
+}
+
+progress[value]::-webkit-progress-value {
+  position: relative;
+
+  background-size: 35px 20px, 100% 100%, 100% 100%;
+  border-radius: 3px;
+
+  /* Animation*/
+  animation: animate-stripes 5s linear infinite;
+}
+
+@keyframes animate-stripes {
+  100% {
+    background-position: -100px 0;
+  }
+}
+ progress[value]::-webkit-progress-value:after {
  
- 
-}
-.espacePersso{
-    margin-left: 1100px;
-    padding: 10px; 
-    color: #fff;
-    background-color: rgb(61, 88, 77);
-    height: 50px;
-}
-h1{
-    color: rgb(150, 14, 14);
-    text-align: center;
-    padding-top: 15px;
-    padding-bottom: 20px;
-}
+  content: "";
+  position: absolute;
 
-.banniere2{
-    background-color: #0e3083; ;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-top: 5px;
+  width: 5px;
+  height: 5px;
+  top: 7px;
+  right: 7px;
 
+  background-color: white;
+  border-radius: 100%;
 } 
-.banniere2 ul{ 
-     position: relative;
-    display: flex;
-    /* flex-direction: row; */
-    color: rgb(252, 250, 247);
-    padding: 12px;
-    margin: 2px;
-  
+
+
+progress[value]::-moz-progress-bar {
+  background-image: -moz-linear-gradient(
+      135deg,
+      transparent,
+      transparent 33%,
+      rgba(0, 0, 0, 0.1) 33%,
+      rgba(0, 0, 0, 0.1) 66%,
+      transparent 66%
+    ),
+    -moz-linear-gradient(top, rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.2)),
+    -moz-linear-gradient(left, #09c, #f44);
+
+  background-size: 35px 20px, 100% 100%, 100% 100%;
+  border-radius: 3px;
 }
+.progress-bar {
+  background-color: whiteSmoke;
+  border-radius: 3px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5) inset;
+  width: 100%;
+  height: 20px;
+}
+
+.progress-bar span {
+  background-color: royalblue;
+  border-radius: 3px;
+
+  display: block;
+  text-indent: -9999px;
+}
+
+p[data-value] {
+  position: relative;
+}
+
+p[data-value]:after {
+  content: attr(data-value) "%";
+  position: absolute;
+  right: 0;
+}
+
+.salarie1::-webkit-progress-value,
+.salarie9::-webkit-progress-value,
+.salarie3::-webkit-progress-value {
+  
+  background-image: -webkit-linear-gradient(
+      135deg,
+      transparent,
+      transparent 33%,
+      rgba(0, 0, 0, 0.1) 33%,
+      rgba(0, 0, 0, 0.1) 66%,
+      transparent 66%
+    ),
+    -webkit-linear-gradient(top, rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.2)),
+    -webkit-linear-gradient(left, #09c, #f44);
+}
+
+.salarie2::-webkit-progress-value,
+.salarie10::-webkit-progress-value,
+.salarie5::-webkit-progress-value {
+ 
+  background-image: -webkit-linear-gradient(
+      135deg,
+      transparent,
+      transparent 33%,
+      rgba(0, 0, 0, 0.1) 33%,
+      rgba(0, 0, 0, 0.1) 66%,
+      transparent 66%
+    ),
+    -webkit-linear-gradient(top, rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.2)),
+    -webkit-linear-gradient(left, #09c, #ff0);
+}
+
+.salarie4::-webkit-progress-value,
+.salarie8::-webkit-progress-value {
+  background-image: -webkit-linear-gradient(
+      135deg,
+      transparent,
+      transparent 33%,
+      rgba(0, 0, 0, 0.1) 33%,
+      rgba(0, 0, 0, 0.1) 66%,
+      transparent 66%
+    ),
+    -webkit-linear-gradient(top, rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.2)),
+    -webkit-linear-gradient(left, #09c, #690);
+}
+.salarie6::-webkit-progress-value,
+.salarie6::-webkit-progress-value,
+.salarie8::-webkit-progress-value {
+  background-image: -webkit-linear-gradient(
+      135deg,
+      transparent,
+      transparent 33%,
+      rgba(0, 0, 0, 0.1) 33%,
+      rgba(0, 0, 0, 0.1) 66%,
+      transparent 66%
+    ),
+    -webkit-linear-gradient(top, rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.2)),
+    -webkit-linear-gradient(left, #09c, #690);
+}
+.salarie1::-moz-progress-bar,
+.salarie9::-moz-progress-bar,
+.salarie3::-moz-progress-bar {
+  
+  background-image: -moz-linear-gradient(
+      135deg,
+      transparent,
+      transparent 33%,
+      rgba(0, 0, 0, 0.1) 33%,
+      rgba(0, 0, 0, 0.1) 66%,
+      transparent 66%
+    ),
+    -moz-linear-gradient(top, rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.2)),
+    -moz-linear-gradient(left, #09c, #f44);
+}
+
+.salarie2::-moz-progress-bar,
+.salarie10::-moz-progress-bar,
+.salarie5::-moz-progress-bar {
+  background-image: -moz-linear-gradient(
+      135deg,
+      transparent,
+      transparent 33%,
+      rgba(0, 0, 0, 0.1) 33%,
+      rgba(0, 0, 0, 0.1) 66%,
+      transparent 66%
+    ),
+    -moz-linear-gradient(top, rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.2)),
+    -moz-linear-gradient(left, #09c, #ff0);
+}
+
+.salarie4::-moz-progress-bar,
+.salarie6::-moz-progress-bar,
+.salarie8::-moz-progress-bar {
+  background-image: -moz-linear-gradient(
+      135deg,
+      transparent,
+      transparent 33%,
+      rgba(0, 0, 0, 0.1) 33%,
+      rgba(0, 0, 0, 0.1) 66%,
+      transparent 66%
+    ),
+    -moz-linear-gradient(top, rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.2)),
+    -moz-linear-gradient(left, #09c, #690);
+}
+
+/* ********************************************************************************* */
